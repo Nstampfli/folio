@@ -1,0 +1,13 @@
+.hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 250px;
+    font-size: 26px;
+    line-height: 30px;
+    text-align: center;
+    &__name{
+        color: var(--maincolor);
+    }
+}

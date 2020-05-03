@@ -1,0 +1,56 @@
+.intro{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+
+
+&__container{
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    justify-content: space-around;
+    align-items: center;
+}
+&__logoDiv{
+    overflow: hidden;
+    max-width: 60%;
+    animation: typing 1.5s ease;
+}
+&__typing{
+    color: var(--maincolor);
+    font-size: 48px;
+    position: relative;
+    text-align: center;
+}
+
+&__typing::after{
+    content: "";
+    position: absolute;
+    right: -5px;
+    width: 1px;
+    height: 100%;
+    border-right: 2px solid black;
+    animation: blink 0.5s infinite ease;
+}
+
+@keyframes blink{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes typing {
+    from { 
+        width: 0;
+        transform: translate(0%, -1000px)  rotate(0deg);
+    }
+    to {
+         width: 60%;
+        transform: translate(0%, 0%)  rotate(2520deg);
+    }
+  }
+}
+

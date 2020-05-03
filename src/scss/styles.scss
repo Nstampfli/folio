@@ -1,0 +1,13 @@
+
+@import "vendors/reset.scss";
+
+@import "config/medias.scss";
+@import "config/global.scss";
+
+img {
+  max-width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}

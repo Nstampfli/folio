@@ -1,5 +1,7 @@
 const text = "Welcome to my folio ! ";
 let typingDiv = document.querySelector('.intro__typing')
+let intro = document.querySelector('.intro')
+let test = document.querySelector('.test')
 let index = 0;
 let letter = '';
 
@@ -9,3 +11,10 @@ function type() {
     setTimeout(type,200);
 };
 setTimeout(type,2000)
+
+function visibleTransition() {
+    intro.classList.remove("visible");
+    test.classList.add("visible");
+}
+
+setTimeout(visibleTransition,7000)

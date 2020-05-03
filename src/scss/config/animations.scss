@@ -1,0 +1,18 @@
+@keyframes blink{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes typing {
+    from { 
+        width: 0;
+        transform: translate(0%, -1000px)  rotate(0deg);
+    }
+    to {
+         width: 100%;
+        transform: translate(0%, 0%)  rotate(2520deg);
+    }
+}

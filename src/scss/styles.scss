@@ -1,13 +1,8 @@
 
-@import "vendors/reset.scss";
+@import "vendors/reset";
 
-@import "config/medias.scss";
-@import "config/global.scss";
+@import "config/fonts";
+@import "config/variables";
+@import "config/medias";
+@import "config/global";
 
-img {
-  max-width: 100%;
-}
-
-* {
-  box-sizing: border-box;
-}

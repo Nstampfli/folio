@@ -40,12 +40,11 @@
         flex-direction: column;
         align-items: center;
         position: absolute;
-        bottom: 5%;
+        bottom: 0%;
     }
     &__scrollTitle{
         color: var(--fontseccolor);
         font-size: 12px;
-        margin-bottom: 5px;
         @include medium{
             font-size: 14px;
         }
@@ -54,6 +53,8 @@
         }
     }
     &__scrollArrow{
+        margin-top: 20px;
+        animation: arrowDownMoove 2s infinite;
         width: 20%;
         max-width: 80px;
     }

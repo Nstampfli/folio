@@ -16,10 +16,12 @@
         @include medium{
             font-size: 40px;
             line-height: 45px;
+            margin-top: 150px;
         }
         @include large{
             font-size: 60px;
             line-height: 70px;
+            margin-top: 200px;
         }
     }
     &__name{

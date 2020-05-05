@@ -1,0 +1,35 @@
+.footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+
+    &__link{
+        margin-bottom: 8px;
+        font-weight: 600;
+        a{
+            color: var(--fontmaincolor);
+            text-decoration: none;
+        }
+        @include medium{
+            margin-bottom: 13px;
+        }
+        @include large{
+            margin-bottom: 18px;
+        }
+    }
+    &__working{
+        margin-top: 2px;
+        color: var(--fontseccolor);
+    }
+    &__link, &__working{
+        font-size: 14px;
+        @include medium{
+            font-size: 16px;
+        }
+        @include large{
+            font-size: 18px;
+        }
+    }
+}

@@ -17,4 +17,4 @@ function visibleTransition() {
     homePage.classList.add("visible");
 }
 
-setTimeout(visibleTransition,1)
+setTimeout(visibleTransition,7000)

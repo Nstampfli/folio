@@ -40,3 +40,24 @@
         transform: translateY(0);
       }
 }
+
+@keyframes turnstileRotate360{
+  0%{
+      transform:rotateY(0deg) ;
+  }
+  50%{
+    transform:rotateY(180deg);
+  }
+  100%{
+    transform:rotateY(360deg);
+  }
+}
+
+@keyframes turnstileStartingUp{
+  0%{
+      transform: translateY(-200vh);
+  }
+  100%{
+    transform: translateY(0);
+  }
+}

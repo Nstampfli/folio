@@ -1,7 +1,7 @@
 const text = "Welcome to my folio ! ";
-let typingDiv = document.querySelector('.intro__typing')
-let intro = document.querySelector('.intro')
-let homePage = document.querySelector('.homePage')
+const typingDiv = document.querySelector('.intro__typing')
+const intro = document.querySelector('.intro')
+const homePage = document.querySelector('.homePage')
 let index = 0;
 let letter = '';
 

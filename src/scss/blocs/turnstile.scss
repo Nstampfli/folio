@@ -25,7 +25,7 @@
     position:absolute;
     background:rgba(0,0,0,.2);
     width: 120px;
-    height:180px;
+    height:160px;
     margin:auto;
     top:0;
     left:0;
@@ -33,12 +33,12 @@
     bottom:0;
     @include medium{
       width:195px;
-      height:130px;
+      height:260px;
     }
 
     @include large{
-      width:300px;
-      height:200px;
+      widows: 250px;
+      height:320px;
     }
   }
   $distanceMobile: 80px;
@@ -84,4 +84,10 @@
     @include large{
       transform:rotateY(90deg) translateZ($distanceLarge);
     }
+  }
+
+  .turnstile__img{
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
   }

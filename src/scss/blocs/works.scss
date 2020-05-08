@@ -3,6 +3,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 30px;
     @include large{
         display: block;
         text-align: initial;
@@ -10,7 +11,6 @@
         width: auto;
     }
     &__titles{
-        margin-top: 30px;
         text-align: center;
         @include medium{
             text-align: initial;

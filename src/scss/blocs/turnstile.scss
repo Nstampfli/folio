@@ -1,29 +1,28 @@
-
-  .turnstile{
-    width:100%;
-    height: 40%;
-    perspective:2500px;
-    animation: turnstileStartingUp 4s ease;
-    @include large{
-      height: 50%;
-    }
+.turnstile{
+  width:100%;
+  height: 40%;
+  perspective:2500px;
+  animation: turnstileStartingUp 4s ease;
+  @include large{
+    height: 50%;
   }
-  .stage{
+  &__stage{
     width:100%;
     height:100%;
     margin-top: 100px;
     transform-style:preserve-3d;
     transform:translate3d(0,0,1000px);
   }
-  .caroussel{
+  &__caroussel{
     width:100%;
     height:100%;
     transform-style:preserve-3d;
-    animation: turnstileRotate360 4s infinite linear;
+    animation: turnstileRotate360 5s infinite linear;
   }
-  .slide{
+  &__slide{
     position:absolute;
-    background:rgba(0,0,0,.2);
+    display: flex;
+    justify-content: center;
     width: 120px;
     height:160px;
     margin:auto;
@@ -44,7 +43,7 @@
   $distanceMobile: 80px;
   $distanceMedium : 130px;
   $distanceLarge : 200px;
-  .a{
+  &__archemede{
     transform:translateZ($distanceMobile);
     @include medium{
     transform:translateZ($distanceMedium);
@@ -54,7 +53,7 @@
     }
     
   }
-  .b{
+  &__katana{
     background-color:rgba(255,0,0,.5);
     transform:translateZ(-$distanceMobile);
     @include medium{
@@ -65,7 +64,7 @@
     }
     
   }
-  .c{
+  &__kaphardie{
     background-color:rgba(255,255,0,.5);
     transform:rotateY(90deg) translateZ(-$distanceMobile);
     @include medium{
@@ -75,7 +74,7 @@
       transform:rotateY(90deg) translateZ(-$distanceLarge);
     }
   }
-  .d{
+  &__saveit{
     background-color:rgba(0,0,255,.5);
     transform:rotateY(90deg) translateZ($distanceMobile);
     @include medium{
@@ -86,8 +85,24 @@
     }
   }
 
-  .turnstile__img{
+  &__img{
     background-repeat: no-repeat;
     width: 100%;
     height: 100%;
   }
+  &__title{
+    text-shadow: 0px 0px 15px #000000;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    @include medium{
+      font-size: 30px;
+    }
+    @include large{
+      font-size: 38px;
+    }
+  }
+}

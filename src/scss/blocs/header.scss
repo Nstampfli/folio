@@ -60,6 +60,7 @@
     }
     &__navNetwork{
         display: none;
+        cursor: pointer;
         width: 15%;
         @include medium{
             display: block;

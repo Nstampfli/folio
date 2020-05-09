@@ -25,7 +25,9 @@ function animateCircles(event) {
   var circle = document.createElement("div");
   circle.setAttribute("class", "circleCursor");
   document.body.appendChild(circle);
-
+  setInterval(() => {
+    document.body.removeChild(circle);
+  }, 500);
   circle.style.left = event.clientX + "px";
   circle.style.top = event.clientY + "px";
 

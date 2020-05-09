@@ -1,64 +1,64 @@
-.hero{
-    height: 100vh;
-    width: 100%;
+.hero {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  &__title {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    height: 50vh;
+    font-size: 26px;
+    line-height: 30px;
+    text-align: center;
+    margin: 100px 20px 0px 20px;
+    @include medium {
+      font-size: 40px;
+      line-height: 45px;
+      margin-top: 150px;
+    }
+    @include large {
+      font-size: 60px;
+      line-height: 70px;
+      margin-top: 200px;
+    }
+  }
+  &__name {
+    color: var(--maincolor);
+  }
+  &__navNetwork {
+    width: 200px;
+    margin-top: 20%;
+    display: block;
+    @include medium {
+      display: none;
+    }
+  }
+  &__scroll {
+    display: flex;
+    width: 30%;
+    max-width: 260px;
+    flex-direction: column;
     align-items: center;
-    position: relative;
-    &__title{
-        display: flex;
-        flex-direction: column;
-        justify-content: center; 
-        height: 50vh;
-        font-size: 26px;
-        line-height: 30px;
-        text-align: center;
-        margin: 100px 20px 0px 20px;
-        @include medium{
-            font-size: 40px;
-            line-height: 45px;
-            margin-top: 150px;
-        }
-        @include large{
-            font-size: 60px;
-            line-height: 70px;
-            margin-top: 200px;
-        }
+    position: absolute;
+    bottom: 2%;
+  }
+  &__scrollTitle {
+    color: var(--fontseccolor);
+    font-size: 12px;
+    @include medium {
+      font-size: 14px;
     }
-    &__name{
-        color: var(--maincolor);
+    @include large {
+      font-size: 16px;
     }
-    &__navNetwork{
-        width: 200px;
-        margin-top: 20%;
-        display: block;
-        @include medium{
-            display: none;
-        }
-    }
-    &__scroll{
-        display: flex;
-        width: 30%;
-        max-width: 260px;
-        flex-direction: column;
-        align-items: center;
-        position: absolute;
-        bottom: 2%;
-    }
-    &__scrollTitle{
-        color: var(--fontseccolor);
-        font-size: 12px;
-        @include medium{
-            font-size: 14px;
-        }
-        @include large{
-            font-size: 16px;
-        }
-    }
-    &__scrollArrow{
-        margin-top: 20px;
-        animation: arrowDownMoove 2s infinite;
-        width: 20%;
-        max-width: 80px;
-    }
+  }
+  &__scrollArrow {
+    margin-top: 20px;
+    animation: arrowDownMoove 2s infinite;
+    width: 20%;
+    max-width: 80px;
+  }
 }

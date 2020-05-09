@@ -1,10 +1,10 @@
 .turnstile {
   width: 100%;
-  height: 40%;
+  height: 40vh;
   perspective: 2500px;
   animation: turnstileStartingUp 4s ease;
   @include large {
-    height: 50%;
+    height: 50vh;
   }
   &__stage {
     width: 100%;

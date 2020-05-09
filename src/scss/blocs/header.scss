@@ -1,79 +1,79 @@
-.homePage{
-    display: none;
-    height: 100vh;
-    width: 100%;
-    overflow-x: hidden;
-    &.visible{
-        display: block;
-    }
+.homePage {
+  display: none;
+  height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+  &.visible {
+    display: block;
+  }
 }
 
-.header{
-    width: 100%;
-    height: 8vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: fixed;
-    padding: 0 5%;
-    z-index: 5;
-    background-color:var(--background) ;
-    &__logo{
-        width: 15%;
-        max-width: 80px;
+.header {
+  width: 100%;
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  padding: 0 5%;
+  z-index: 5;
+  background-color: var(--background);
+  &__logo {
+    width: 15%;
+    max-width: 80px;
+  }
+  &__navPage {
+    width: 50%;
+    ul {
+      display: flex;
+      justify-content: space-around;
+      @include medium {
+        justify-content: space-evenly;
+      }
     }
-    &__navPage{
-        width: 50%;
-        ul{
-            display: flex;
-            justify-content: space-around;
-            @include medium{
-                justify-content: space-evenly;
-            }
+    a {
+      color: var(--fontseccolor);
+      font-weight: 600;
+      text-decoration: none;
+      font-size: 14px;
+      @include medium {
+        font-size: 16px;
+      }
+      &:hover {
+        color: var(--fontmaincolor);
+      }
+      &.selected {
+        color: var(--fontmaincolor);
+        position: relative;
+        &::after {
+          content: "";
+          position: absolute;
+          right: 50%;
+          transform: translateX(50%) rotate(45deg);
+          top: 125%;
+          width: 8px;
+          height: 8px;
+          background-color: var(--maincolor);
         }
-        a{
-            color: var(--fontseccolor);
-            font-weight: 600;
-            text-decoration: none;
-            font-size: 14px;
-            @include medium{
-                font-size: 16px;
-            }
-            &:hover{
-                color: var(--fontmaincolor);
-            }
-            &.selected{
-                color: var(--fontmaincolor);
-                position: relative;
-                &::after{
-                    content: "";
-                    position: absolute;
-                    right: 50%;
-                    transform: translateX(50%) rotate(45deg);
-                    top: 125%;
-                    width: 8px;
-                    height: 8px;
-                    background-color: var(--maincolor);
-                }
-            }
-        }
+      }
     }
-    &__navNetwork{
-        display: none;
-        cursor: pointer;
-        width: 15%;
-        @include medium{
-            display: block;
-        }
-        @include large{
-            width: 10%;
-        }
-        ul{
-            display: flex;
-            justify-content: space-between;
-        }
-        li:hover{
-            transform: scale(1.3);
-        }
+  }
+  &__navNetwork {
+    display: none;
+    cursor: pointer;
+    width: 15%;
+    @include medium {
+      display: block;
     }
+    @include large {
+      width: 10%;
+    }
+    ul {
+      display: flex;
+      justify-content: space-between;
+    }
+    li:hover {
+      transform: scale(1.3);
+    }
+  }
 }

@@ -1,43 +1,43 @@
-.intro{
-    display: none;
-    height: 100vh;
-    align-items: center;
-    justify-content: center;
-&.visible{
+.intro {
+  display: none;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  &.visible {
     display: flex;
-}
-&__container{
+  }
+  &__container {
     display: flex;
     flex-direction: column;
     height: 80vh;
     justify-content: space-evenly;
     align-items: center;
-}
-&__logoDiv{
+  }
+  &__logoDiv {
     overflow: hidden;
     max-width: 60%;
     animation: typing 1.5s ease;
-    @include medium{
-        max-width: 80%;
+    @include medium {
+      max-width: 80%;
     }
-    @include large{
-        max-width: 100%;
+    @include large {
+      max-width: 100%;
     }
-}
-&__typing{
+  }
+  &__typing {
     color: var(--maincolor);
     font-size: 48px;
     position: relative;
     text-align: center;
-    @include medium{
-        font-size: 60px;
+    @include medium {
+      font-size: 60px;
     }
-    @include large{
-        font-size: 72px;
+    @include large {
+      font-size: 72px;
     }
-}
+  }
 
-&__typing::after{
+  &__typing::after {
     content: "";
     position: absolute;
     right: -5px;
@@ -45,10 +45,8 @@
     height: 100%;
     border-right: 2px solid black;
     animation: blink 0.5s infinite ease;
-    @include medium{
-        border-right: 3px solid black;
+    @include medium {
+      border-right: 3px solid black;
     }
+  }
 }
-
-}
-

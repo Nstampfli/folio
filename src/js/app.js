@@ -19,6 +19,14 @@ function visibleTransition() {
 
 setTimeout(visibleTransition, 4500);
 
+const cursor = document.querySelector(".cursor");
+
+document.addEventListener("mousemove", e => {
+  cursor.setAttribute(
+    "style",
+    "top: " + e.pageY + "px; left: " + e.pageX + "px;"
+  );
+});
 document.onmousemove = animateCircles;
 
 function animateCircles(event) {

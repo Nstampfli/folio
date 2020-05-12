@@ -16,7 +16,7 @@
   &__logoDiv {
     overflow: hidden;
     max-width: 60%;
-    animation: typing 1.5s ease;
+    animation: introLogo 1.5s ease;
     @include medium {
       max-width: 80%;
     }

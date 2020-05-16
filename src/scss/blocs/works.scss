@@ -12,7 +12,7 @@
     }
     &__titles{
         text-align: center;
-        @include medium{
+        @include large{
             text-align: initial;
         }
     }

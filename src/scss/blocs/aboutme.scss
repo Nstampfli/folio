@@ -1,5 +1,11 @@
 .aboutme{
     width: 100%;
+    @include medium{
+        margin-top:150px;
+    }
+    @include large{
+        margin-top: 200px;
+    }
     &__titles{
         text-align: center;
         width: 100%;
@@ -77,6 +83,9 @@
         flex-direction: column;
         align-items: center;
         height: 100%;
+        @include large{
+            align-items: initial;
+        }
     }
     &__description{
         font-size: 14px;
@@ -89,6 +98,7 @@
         }
         @include large{
             margin: 0px 5% 30px 0px;
+            text-align: initial;
         }
     }
     &__download{
@@ -116,13 +126,13 @@
         margin-top: 70px;
     }
     &__line{
-        width: 1000%;
+        width: 80000%;
         font-weight: bold;
-        font-size: 20px;
+        font-size: 32px;
         line-height: 30px;
         text-transform: uppercase;
         color: transparent;
-        -webkit-text-stroke: 0.5px var(--fontmaincolor);
+        -webkit-text-stroke: 0.8px var(--fontmaincolor);
         &:nth-child(2n){
             transform: rotateX(180deg);
         }

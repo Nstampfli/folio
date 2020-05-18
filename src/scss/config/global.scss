@@ -20,6 +20,7 @@ body {
   border: 1px solid #cc0303;
   position: absolute;
   border-radius: 50px;
+  pointer-events: none;
 }
 ::selection {
   /* effet souris  */

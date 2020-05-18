@@ -5,7 +5,9 @@ img {
 * {
   box-sizing: border-box;
 }
-
+html{
+  scroll-behavior: smooth;
+}
 body {
   background-color: var(--background);
   color: var(--fontmaincolor);
@@ -14,7 +16,7 @@ body {
   overflow-x: hidden;
 }
 .circleCursor {
-  z-index: 2;
+  z-index: 5;
   width: 20px;
   height: 20px;
   border: 1px solid #cc0303;

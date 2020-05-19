@@ -16,7 +16,6 @@ function visibleTransition() {
   intro.classList.remove("visible");
   homePage.classList.add("visible");
 }
-
 setTimeout(visibleTransition, 4500);
 
 // const cursor = document.querySelector(".cursor");

@@ -79,6 +79,9 @@
     width: 900px;
     transition: transform 1s ease-in-out;
     @include medium{
+      width: 1350px;
+    }
+    @include large{
       width: 1800px;
     }
   }
@@ -103,7 +106,7 @@
     @include medium{
       width: 450px;
     }
-    @include medium{
+    @include large{
       width: 600px;
     }
   }

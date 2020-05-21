@@ -1,11 +1,5 @@
 .contact{
     width: 100%;
-    @include medium{
-        margin-top:80px;
-    }
-    @include large{
-        margin-top: 130px;
-    }
     &__titles{
         text-align: center;
         width: 100%;

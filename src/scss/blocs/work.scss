@@ -58,6 +58,9 @@
     margin-top: 40px;
     @include large{
       flex-direction: row-reverse;
+      margin: 40px 40px 0px 40px;
+    }
+    @media (min-width: 1350px) {
       margin: 40px 10% 0px 10%;
     }
   }

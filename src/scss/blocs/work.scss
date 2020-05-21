@@ -89,10 +89,25 @@
   &__arrows{
     display: flex;
     margin-top: 16px;
+    align-items: center;
     width: 300px;
     justify-content: space-around;
     @include medium{
       width: 450px;
+    }
+  }
+  &__carouPoints{
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+  }
+  &__carouPoint{
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: var(--fontseccolor);
+    &.activate{
+      background-color: var(--maincolor);
     }
   }
   &__prevArrow,&__nextArrow{
@@ -106,7 +121,7 @@
     }
   }
   &__prevArrow{
-    opacity: 0.3;
+    visibility: hidden;
   }
   &__descriptions{
     display: flex;

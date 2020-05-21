@@ -8,6 +8,7 @@ let carouWidth = $carouElements.offsetWidth;
 let elementWidth = carouWidth / $carouElement.length;
 let maxTranslate = carouWidth - elementWidth;
 let shift = 0;
+
 $next.addEventListener('click', function() {
   carouselFunction(1);
 });
@@ -15,6 +16,14 @@ $next.addEventListener('click', function() {
 $prev.addEventListener('click', function() {
   carouselFunction(-1);
 });
+
+for (let i = 0; i < $carouPoint.length; i++) {
+  $carouPoint[i].addEventListener('click', function () {
+    let index  = shift/elementWidth;
+    let indexMoove = i - index;
+    carouselFunction(indexMoove);
+  })
+}
 
 function carouselFunction(coeff) {
   shift += elementWidth  * coeff;
@@ -40,9 +49,11 @@ function carouConditionFunction() {
   if (shift >= maxTranslate) {
     shift = maxTranslate;
     $next.style.visibility='hidden';
+    $prev.style.visibility='visible';
   } else if (shift <= 0) {
     shift = 0;
     $prev.style.visibility='hidden';
+    $next.style.visibility='visible';
   }
   else{
     $prev.style.visibility='visible';

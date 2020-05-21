@@ -121,6 +121,7 @@
   &__carouPoint{
     width: 10px;
     height: 10px;
+    cursor: pointer;
     border-radius: 100%;
     background-color: var(--fontseccolor);
     &.activate{

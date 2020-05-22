@@ -5,7 +5,7 @@ function animateCircles(event) {
   circle.setAttribute("class", "circleCursor");
   document.body.appendChild(circle);
   setInterval(() => {
-    document.body.removeChild(circle);
+    circle.remove();
   }, 500);
   circle.style.left = event.clientX + "px";
   circle.style.top = event.clientY + window.scrollY + 'px';

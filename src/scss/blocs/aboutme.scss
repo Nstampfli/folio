@@ -1,10 +1,10 @@
 .aboutme{
     width: 100%;
     @include medium{
-        margin-top:150px;
+        margin-top:190px;
     }
     @include large{
-        margin-top: 200px;
+        margin-top: 240px;
     }
     &__titles{
         text-align: center;

@@ -1,11 +1,3 @@
-const cursor = document.querySelector(".cursor");
-
-document.addEventListener("mousemove", e => {
-  cursor.setAttribute(
-    "style",
-    "top: " + e.pageY + "px; left: " + e.pageX + "px;"
-  );
-});
 document.onmousemove = animateCircles;
 
 function animateCircles(event) {
@@ -16,7 +8,7 @@ function animateCircles(event) {
     document.body.removeChild(circle);
   }, 500);
   circle.style.left = event.clientX + "px";
-  circle.style.top = event.clientY + "px";
+  circle.style.top = event.clientY + window.scrollY + 'px';
 
   circle.style.transition = "all 0.5s linear 0s";
   circle.style.left = circle.offsetLeft - 30 + "px";

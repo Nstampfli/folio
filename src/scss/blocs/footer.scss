@@ -29,12 +29,12 @@
   }
   &__link,
   &__working {
-    font-size: 12px;
+    font-size: 10px;
     @include medium {
-      font-size: 14px;
+      font-size: 12px;
     }
     @include large {
-      font-size: 16px;
+      font-size: 14px;
     }
   }
 }

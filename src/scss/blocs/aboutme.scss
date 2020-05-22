@@ -70,12 +70,12 @@
         }
     }
     &__profilpic{
-        width: 250px;
+        width: 200px;
         @include medium{
-            width: 300px;
+            width: 250px;
         }
         @include large{
-            width: 350px;
+            width: 300px;
         }
     }
     &__descriptions{
